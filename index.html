@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tests - JS Exercises</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <section class="card" role="main">
+    <header>
+      <h1>Tests — JS Exercises</h1>
+      <p class="lead">Results on screen: green = OK, red = fail. Click <strong>Run tests</strong> to re-run them.</p>
+    </header>
+
+    <article class="summary">
+      <ul>
+        <li class="badge">✅ Passed: <strong id="passed">0</strong></li>
+        <li class="badge">❌ Failed: <strong id="failed">0</strong></li>
+        <li class="badge">🧪 Total: <strong id="total">0</strong></li>
+      </ul>
+    </article>
+
+    <div style="overflow:auto; max-height:60vh;">
+      <div id="exercises" aria-live="polite"></div>
+    </div>
+
+    <div class="controls">
+      <button id="run">🔁 Run tests</button>
+      <button id="copy" class="primary">📋 Copy results</button>
+    </div>
+
+    <footer class="small">Copy this file as <strong>exercises_test.html</strong> and open it in your browser.</footer>
+  </section>
+
+  <script src="./src/index.js"></script>
+  <script src="./src/test.js"></script>
+</body>
+
+</html>
